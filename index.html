@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soluções Florestais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Soluções Florestais</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Início</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#preservacao">Preservação</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+      </ul>
+    </nav>
+    <div class="acessibilidade">
+      <button id="contraste">Contraste</button>
+      <button id="aumentar">A+</button>
+      <button id="diminuir">A-</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Preservar é resistir</h2>
+      <p>A floresta é um bem natural que precisa de cuidado e ação. Conheça soluções reais para proteger nosso futuro.</p>
+    </section>
+
+    <section id="solucoes">
+      <h2>Soluções sustentáveis</h2>
+      <p>Algumas das principais soluções incluem reflorestamento, fiscalização contra desmatamento ilegal, educação ambiental e incentivos à agricultura sustentável.</p>
+    </section>
+
+    <section id="preservacao">
+      <h2>Como preservar</h2>
+      <p>Você pode contribuir com ações simples: evitar o desperdício de papel, apoiar produtos de origem sustentável, participar de campanhas ambientais e compartilhar conhecimento.</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria Verde</h2>
+      <div class="imagens">
+        <img src="img1.jpg" alt="Floresta preservada" />
+        <img src="img2.jpg" alt="Projeto de reflorestamento" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Marcos Henrique Romualdo da Silva Filho — Concurso Agrinho</p>
+  </footer>
+
+  <script>
+    // Acessibilidade JS
+    const contrasteBtn = document.getElementById('contraste');
+    const aumentarBtn = document.getElementById('aumentar');
+    const diminuirBtn = document.getElementById('diminuir');
+
+    contrasteBtn.onclick = () => document.body.classList.toggle('contraste');
+    aumentarBtn.onclick = () => document.body.style.fontSize = 'larger';
+    diminuirBtn.onclick = () => document.body.style.fontSize = 'smaller';
+  </script>
+</body>
+</html>
